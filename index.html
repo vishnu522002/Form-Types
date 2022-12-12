@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+    <h1 id="title">Survey Form for Gamers</h1>
+    <p id="description">Tell us about your favourite game to know about a popular games among Gamers</p><br>
+
+    <form id="survey-form">
+    <div class="form-container">
+     <fieldset> 
+
+      <label id="name-label">Name:
+      <input id="name" type="text" placeholder="Enter your name" required>
+      </label>
+
+      <label id="email-label">Email:
+      <input id="email" type="email" placeholder="Enter your email" required>
+      </label>
+
+      <label id="number-label">Age:
+      <input id="number" type="number" min="12" max="100" placeholder="Enter your age" required>
+      </label>
+
+      <p class="gender-text">Gender:</p> 
+      <label class="gender-label">
+      <input type="radio" name="gender" value="male" class="inline">Male
+      </label>
+      <label class="gender-label">
+      <input type="radio" name="gender" value="female" class="inline">Female
+      </label>
+      <label class="gender-label">
+      <input type="radio" name="gender" value="other" class="inline">Other
+      </label> 
+
+     </fieldset>
+
+
+     <fieldset>
+     <label for="dropdown">Choose your favourite game:
+      <select id="dropdown">
+        <option selected disabled>Select your favourite game</option>
+        <option>PUBG</option>
+        <option>Free Fire</option>
+        <option>Fortnite</option>
+        <option>GTA</option>
+        <option>God of war</option>
+        <option>Clash of clans</option>
+        <option>other</option>
+      </select>
+     </label>
+
+      <p>Select a genre: </p>
+      <label class="genre-label">
+      <input type="checkbox" value="fantasy" class="inline">Fantasy
+      </label>
+      <label class="genre-label">
+      <input type="checkbox" value="adventure" class="inline">Adventure
+      </label>
+     
+      <label class="genre-label">
+      <input type="checkbox" value="mystery" class="inline">Mystery
+      </label>
+      <label class="genre-label">
+      <input type="checkbox" value="crime-thriller" class="inline">Crime-thriller
+      </label>
+      <label class="genre-label">
+      <input type="checkbox" value="other" class="inline">Other
+      </label>
+      <br>
+      <p>Tell us more about your favourite game:</p>
+      <textarea rows="10">This game is super cool...</textarea>
+     </fieldset>
+     </div>
+     <div class="button-container">
+     <button type="submit" id="submit">Submit</button>
+     </div>
+    </form>
+    </div>
+  </body>
+</html>
